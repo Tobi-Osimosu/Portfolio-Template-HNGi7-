@@ -17,6 +17,9 @@ body {
 
 nav {
   font-weight: normal;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
+
   // position: fixed;
   // top: 0;
   // right: 0;
@@ -44,7 +47,7 @@ nav {
   }
 }
 .bg-light {
-  background-color: #0f1211 !important;
+  background-color: #0e100f !important;
 }
 
 @media screen and (min-width: 768px) {
@@ -492,7 +495,7 @@ nav {
 }
 
 #get-in-touch {
-  background: #0E100F;
+  background: #0e100f;
   .get-in-touch {
     width: 71%;
     &__header-text {
@@ -517,12 +520,12 @@ nav {
 
   .get-in-touch-form {
     &__input {
-      background: #000000;
+      background: #0e100f;
       color: #ffffff;
     }
 
     &__message {
-      background: #000000;
+      background: #0e100f;
       color: #ffffff;
       height: 13rem !important;
     }
@@ -674,7 +677,7 @@ footer {
     }
     .guitar-line {
       position: absolute;
-      bottom: 13px;
+      bottom: 58px;
       left: 63px;
     }
   }
