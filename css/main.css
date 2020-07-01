@@ -309,7 +309,7 @@ nav .navbar-brand {
 #upcoming-shows .upcoming__header-text::before {
   content: "";
   position: absolute;
-  top: 84px;
+  top: 40px;
   left: -13px;
   height: 3px;
   width: 106%;
@@ -437,7 +437,7 @@ nav .navbar-brand {
 #get-in-touch .get-in-touch__header-text::before {
   content: "";
   position: absolute;
-  top: 87px;
+  top: 42px;
   left: -13px;
   height: 3px;
   width: 106%;
