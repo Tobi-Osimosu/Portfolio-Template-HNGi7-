@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #0e100f;
+  background-color: #000000;
 }
 
 .container {
@@ -16,7 +16,7 @@ body {
 }
 
 nav {
-  font-weight: bold;
+  font-weight: normal;
   // position: fixed;
   // top: 0;
   // right: 0;
@@ -49,7 +49,7 @@ nav {
 
 @media screen and (min-width: 768px) {
   nav {
-    position: static !important;
+    // position: static !important;
   }
 }
 
@@ -492,6 +492,7 @@ nav {
 }
 
 #get-in-touch {
+  background: #0E100F;
   .get-in-touch {
     width: 71%;
     &__header-text {
@@ -668,12 +669,12 @@ footer {
     }
     .guitar {
       position: absolute;
-      top: 65px;
+      top: 150px;
       left: 0;
     }
     .guitar-line {
       position: absolute;
-      bottom: 155px;
+      bottom: 13px;
       left: 63px;
     }
   }
