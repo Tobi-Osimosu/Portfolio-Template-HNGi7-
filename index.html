@@ -12,18 +12,38 @@
     <title>Template 12</title>
 </head>
 
-<body>
-    <!-- <header>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">ANNA HAYES</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon" style="color: white;"></span>
+            <a class="navbar-brand" href="#welcome">ANNA HAYES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="color: white;"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-              
+                <ul class="navbar-nav ml-auto d-md-none">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-me">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#my-works">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#upcoming-shows">Upcoming Shows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#titles">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#get-in-touch">Contact</a>
+                    </li>
+                </ul>
             </div>
-          </nav>
-    </header> -->
+        </nav>
+    </header>
     <main>
         <section id="welcome" class="d-flex">
             <div class="container d-flex flex-column align-items-center justify-content-center">
@@ -34,7 +54,8 @@
                         <li class="welcome__list__item mr-3 mr-md-5">Music Writer</li>
                         <li class="welcome__list__item">Voice Over Artist</li>
                     </ul>
-                    <button class="welcome__btn btn btn-outline-primary btn-block btn-lg mt-5">CONTACT ME</button>
+                    <button class="welcome__btn btn btn-outline-primary btn-block btn-lg mt-5"
+                        onclick="document.location.href='#get-in-touch';">CONTACT ME</button>
                 </div>
             </div>
 

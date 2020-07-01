@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: #fff;
+  transition: all 0.3s ease-in-out;
 }
 
 body {
@@ -15,19 +16,35 @@ body {
 }
 
 nav {
+  font-weight: bold;
+
   .navbar-brand {
+    // color: #b6b6b6 !important;
     color: #ffffff !important;
     font-family: "Allura", cursive !important;
     font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 15px;
-    // line-height: 30px;
-    color: #fff;
+  }
+
+  .nav-link {
+    color: #b6b6b6 !important;
+  }
+
+  .nav-link.active {
+    color: #7e2727 !important;
   }
 }
-
 .bg-light {
-  background-color: transparent !important;
+  background-color: #272727 !important;
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-light {
+    background-color: transparent !important;
+    opacity: 0.8;
+  }
 }
 
 #welcome {
