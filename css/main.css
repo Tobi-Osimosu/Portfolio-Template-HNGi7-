@@ -5,8 +5,8 @@
           box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 body {
@@ -30,7 +30,11 @@ nav .navbar-brand {
 }
 
 nav .nav-link {
-  color: #b6b6b6 !important;
+  color: #ffffff !important;
+}
+
+nav .nav-link:hover {
+  color: #7e2727 !important;
 }
 
 nav .nav-link.active {
@@ -38,14 +42,12 @@ nav .nav-link.active {
 }
 
 .bg-light {
-  background-color: #272727 !important;
-  opacity: 0.8;
+  background-color: #0f1211 !important;
 }
 
 @media screen and (min-width: 768px) {
-  .bg-light {
-    background-color: transparent !important;
-    opacity: 0.8;
+  nav {
+    position: static !important;
   }
 }
 
@@ -211,7 +213,7 @@ nav .nav-link.active {
     top: 100px;
     right: 0;
     height: 4px;
-    width: 70%;
+    width: 75%;
   }
   #about-me .about-me__name {
     font-size: 35px;
@@ -263,6 +265,13 @@ nav .nav-link.active {
 
 #my-works .my-works__see-more:hover, #my-works .my-works__see-more:active {
   color: #424242;
+}
+
+#my-works .my-works .my-works__gallery a:hover,
+#my-works .my-works a:active,
+#my-works .my-works a:focus {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 @media screen and (min-width: 768px) {
@@ -572,6 +581,9 @@ footer .footer-copyright {
 }
 
 @media screen and (min-width: 768px) {
+  footer {
+    position: relative;
+  }
   footer .footer-header {
     font-size: 55px;
     line-height: 69px;
@@ -586,6 +598,16 @@ footer .footer-copyright {
   }
   footer .img-icon {
     width: 16%;
+  }
+  footer .guitar {
+    position: absolute;
+    top: 65px;
+    left: 0;
+  }
+  footer .guitar-line {
+    position: absolute;
+    bottom: 155px;
+    left: 63px;
   }
 }
 /*# sourceMappingURL=main.css.map */

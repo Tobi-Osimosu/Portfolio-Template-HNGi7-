@@ -4,7 +4,7 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
   color: #fff;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 
 body {
@@ -17,6 +17,11 @@ body {
 
 nav {
   font-weight: bold;
+  // position: fixed;
+  // top: 0;
+  // right: 0;
+  // left: 0;
+  // z-index: 1030;
 
   .navbar-brand {
     // color: #b6b6b6 !important;
@@ -28,7 +33,10 @@ nav {
   }
 
   .nav-link {
-    color: #b6b6b6 !important;
+    color: #ffffff !important;
+    &:hover {
+      color: #7e2727 !important;
+    }
   }
 
   .nav-link.active {
@@ -36,14 +44,12 @@ nav {
   }
 }
 .bg-light {
-  background-color: #272727 !important;
-  opacity: 0.8;
+  background-color: #0f1211 !important;
 }
 
 @media screen and (min-width: 768px) {
-  .bg-light {
-    background-color: transparent !important;
-    opacity: 0.8;
+  nav {
+    position: static !important;
   }
 }
 
@@ -212,7 +218,7 @@ nav {
             top: 100px;
             right: 0;
             height: 4px;
-            width: 70%;
+            width: 75%;
           }
         }
       }
@@ -270,6 +276,11 @@ nav {
       &:active {
         color: #424242;
       }
+    }
+    .my-works__gallery a:hover,
+    a:active,
+    a:focus {
+      transform: scale(0.9);
     }
   }
 }
@@ -636,6 +647,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   footer {
+    position: relative;
     .footer-header {
       font-size: 55px;
       line-height: 69px;
@@ -653,6 +665,16 @@ footer {
     }
     .img-icon {
       width: 16%;
+    }
+    .guitar {
+      position: absolute;
+      top: 65px;
+      left: 0;
+    }
+    .guitar-line {
+      position: absolute;
+      bottom: 155px;
+      left: 63px;
     }
   }
 }
