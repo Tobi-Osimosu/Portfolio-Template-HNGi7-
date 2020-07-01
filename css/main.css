@@ -15,8 +15,21 @@ body {
   margin: 0 auto;
 }
 
+nav .navbar-brand {
+  color: #ffffff !important;
+  font-family: "Allura", cursive !important;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #fff;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
 #welcome {
-  background: url("/img/bg-1.png");
+  background: url("../img/bg-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -127,13 +140,16 @@ body {
     position: relative;
   }
   #about-me::before {
-    content: "";
+    content: "BIO";
     position: absolute;
-    top: 50%;
-    left: 0;
-    background: url("/img/g-works-2.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    top: 127px;
+    left: -110px;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    color: #1a1c1b;
+    font-size: 180px;
+    font-weight: 900;
+    opacity: 0.5;
   }
   #about-me .about-me__header-text {
     position: relative;
@@ -225,17 +241,10 @@ body {
 }
 
 #my-works .my-works__see-more:hover, #my-works .my-works__see-more:active {
-  color: #000000;
+  color: #424242;
 }
 
 @media screen and (min-width: 768px) {
-  #my-works {
-    position: relative;
-    background: url("/img/WORKS.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-  }
   #my-works .my-works__header-text {
     position: relative;
     font-size: 55px;
@@ -278,7 +287,7 @@ body {
 }
 
 #upcoming-shows {
-  background: url("/img/bg-2.png");
+  background: url("../img/bg-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -476,13 +485,6 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  #get-in-touch {
-    position: relative;
-    background: url("/img/CONTACT.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
-  }
   #get-in-touch .get-in-touch {
     width: 100%;
   }
@@ -527,14 +529,17 @@ footer .footer-details__phone-number, footer .footer-details__email {
   font-weight: normal;
   font-size: 0.75rem;
   line-height: 18px;
-}
-
-footer .footer-details__phone-number {
+  color: #fff;
+  text-decoration: none;
   text-align: center;
 }
 
-footer .footer-details__email {
-  text-align: center;
+footer .footer-details__phone-number:hover, footer .footer-details__phone-number:active, footer .footer-details__email:hover, footer .footer-details__email:active {
+  color: #424242;
+}
+
+footer .img-icon {
+  width: 10%;
 }
 
 footer .footer-copyright {
@@ -557,6 +562,9 @@ footer .footer-copyright {
   footer .footer-copyright {
     font-size: 18px;
     line-height: 27px;
+  }
+  footer .img-icon {
+    width: 16%;
   }
 }
 /*# sourceMappingURL=main.css.map */

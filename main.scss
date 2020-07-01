@@ -14,8 +14,24 @@ body {
   margin: 0 auto;
 }
 
+nav {
+  .navbar-brand {
+    color: #ffffff !important;
+    font-family: "Allura", cursive !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    // line-height: 30px;
+    color: #fff;
+  }
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+
 #welcome {
-  background: url("/img/bg-1.png");
+  background: url("../img/bg-1.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -134,13 +150,15 @@ body {
   #about-me {
     position: relative;
     &::before {
-      content: "";
+      content: "BIO";
       position: absolute;
-      top: 50%;
-      left: 0;
-      background: url("/img/g-works-2.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
+      top: 127px;
+      left: -110px;
+      transform: rotate(-90deg);
+      color: #1a1c1b;
+      font-size: 180px;
+      font-weight: 900;
+      opacity: 0.5;
     }
     .about-me {
       &__header-text {
@@ -233,7 +251,7 @@ body {
 
       &:hover,
       &:active {
-        color: #000000;
+        color: #424242;
       }
     }
   }
@@ -241,11 +259,20 @@ body {
 
 @media screen and (min-width: 768px) {
   #my-works {
-    position: relative;
-    background: url("/img/WORKS.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
+    // position: relative;
+
+    // &::before {
+    //   content: "WORKS";
+    //   position: absolute;
+    //   top: 400px;
+    //   left: -307px;
+    //   transform: rotate(-90deg);
+    //   color: #3d3d3d;
+    //   font-size: 180px;
+    //   font-weight: 900;
+    //   opacity: 0.5;
+    //   z-index: 1;
+    // }
 
     .my-works {
       &__header-text {
@@ -294,7 +321,7 @@ body {
 }
 
 #upcoming-shows {
-  background: url("/img/bg-2.png");
+  background: url("../img/bg-2.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -499,11 +526,19 @@ body {
 
 @media screen and (min-width: 768px) {
   #get-in-touch {
-    position: relative;
-    background: url("/img/CONTACT.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: left;
+    // position: relative;
+
+    // &::before {
+    //   content: "CONTACT";
+    //   position: absolute;
+    //   top: 200px;
+    //   left: -399px;
+    //   transform: rotate(-90deg);
+    //   color: #1a1c1b;
+    //   font-size: 180px;
+    //   font-weight: 900;
+    //   opacity: 0.5;
+    // }
 
     .get-in-touch {
       width: 100%;
@@ -558,15 +593,21 @@ footer {
       font-weight: normal;
       font-size: 0.75rem;
       line-height: 18px;
-    }
-    &__phone-number {
+      color: #fff;
+      text-decoration: none;
       text-align: center;
-    }
 
-    &__email {
-      text-align: center;
+      &:hover,
+      &:active {
+        color: #424242;
+      }
     }
   }
+
+  .img-icon {
+    width: 10%;
+  }
+
   .footer-copyright {
     font-family: "Poppins", sans-serif;
     font-style: normal;
@@ -592,6 +633,9 @@ footer {
     .footer-copyright {
       font-size: 18px;
       line-height: 27px;
+    }
+    .img-icon {
+      width: 16%;
     }
   }
 }

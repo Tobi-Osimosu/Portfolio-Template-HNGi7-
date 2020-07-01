@@ -7,17 +7,25 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>Template 12</title>
 </head>
 
 <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">ANNA HAYES</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" style="color: white;"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              
+            </div>
+          </nav>
+    </header>
     <main>
         <section id="welcome" class="d-flex">
-            <header>
-
-            </header>
             <div class="container d-flex flex-column align-items-center justify-content-center">
                 <div class="welcome d-flex flex-column align-items-center justify-content-center mt-5">
                     <h1 class="welcome__header">I'm Anna Hayes</h1>
@@ -36,7 +44,7 @@
             <div class="about-me container py-5">
                 <h1 class="about-me__header-text">ABOUT ME</h1>
                 <div class="about-me__content">
-                    <img src="/img/about-me.svg" alt="About Me Image" class="about-me__img mt-4 img-fluid">
+                    <img src="./img/about-me.svg" alt="About Me Image" class="about-me__img mt-4 img-fluid">
                     <div class="about-me__summary">
                         <h3 class="about-me__name my-5">ANNA HAYES</h3>
                         <p class="about-me__text">I’m most people find themselves at a crossroads in their career. Mimi
@@ -63,15 +71,18 @@
                 <div class="container">
                     <div
                         class="my-works__gallery d-flex flex-column flex-wrap flex-md-row align-items-center justify-content-md-between mt-5">
-                        <a href="#"><img src="/img/g-works-1.svg" alt="My Works" class="img-fluid mt-5"></a>
-                        <a href="#"><img src="/img/g-works-4.svg" alt="My Works" class="img-fluid mt-5"></a>
-                        <a href="#"><img src="/img/g-works-3.svg" alt="My Works" class="img-fluid mt-5"></a>
-                        <a href="#"><img src="/img/g-works-4.svg" alt="My Works" class="img-fluid mt-5 d-none d-md-flex"></a>
-                        <a href="#"><img src="/img/g-works-5.svg" alt="My Works" class="img-fluid mt-5 d-none d-md-flex"></a>
-                        <a href="#"><img src="/img/g-works-6.svg" alt="My Works" class="img-fluid mt-5 d-none d-md-flex"></a>
+                        <a href="#"><img src="./img/g-works-1.svg" alt="My Works" class="img-fluid mt-0 mt-md-5"></a>
+                        <a href="#"><img src="./img/g-works-4.svg" alt="My Works" class="img-fluid mt-5"></a>
+                        <a href="#"><img src="./img/g-works-3.svg" alt="My Works" class="img-fluid mt-5"></a>
+                        <a href="#"><img src="./img/g-works-4.svg" alt="My Works"
+                                class="img-fluid mt-5 d-none d-md-flex"></a>
+                        <a href="#"><img src="./img/g-works-5.svg" alt="My Works"
+                                class="img-fluid mt-5 d-none d-md-flex"></a>
+                        <a href="#"><img src="./img/g-works-6.svg" alt="My Works"
+                                class="img-fluid mt-5 d-none d-md-flex"></a>
                     </div>
                     <div class="link d-flex justify-content-center mt-5 d-md-none">
-                        <a href="#" class="my-works__see-more">SEE MORE</a>
+                        <a href="#" class="my-works__see-more">SEE MORE +</a>
                     </div>
                     <div class="d-none d-md-flex justify-content-center mt-5">
                         <button class="my-works__see-more-button btn btn-outline-primary btn-lg">SEE MORE</button>
@@ -165,16 +176,18 @@
     <footer class="container-fluid">
         <!-- <img src="" alt="Footer Logo" class="footer-logo"> -->
         <h1 class="footer-header">ANNA HAYES</h1>
-        <div class="footer-details d-md-flex justify-content-center mt-5">
-            <p class="footer-details__phone-number mr-md-5">+(123) 456 -7890</p>
-            <p class="footer-details__email">annahayes@email.com</p>
+        <div class="footer-details d-flex flex-column flex-md-row justify-content-center mt-5">
+            <a href="#" class="footer-details__phone-number mr-md-5"><img src="./img/phone.svg" alt="Phone"
+                    class="pr-3 img-icon">+(123) 456 -7890</a>
+            <a href="#" class="footer-details__email"><img src="./img/message.svg" alt="Message"
+                    class="pr-3 img-icon">annahayes@email.com</a>
         </div>
         <div class="footer-social-icons d-flex justify-content-center mt-5">
             <!-- <img src="/img/facebook-icon.svg" alt="Facebook Icon" class="footer-social-icon__facebook">
             <img src="/img/twitter-icon.svg" alt="Twitter icon" class="footer-social-icon__twitter">
             <img src="/img/instagram-icon.svg" alt="Instagram Icon" class="footer-social-icon__instagram">
             <img src="/img/linkedin-icon.svg" alt="LinkedIn Icon" class="footer-social-icon__linkedin"> -->
-            <img src="/img/group-social-icons-sm.svg" alt="Group Social Icons" class="social-icons">
+            <img src="./img/group-social-icons-sm.svg" alt="Group Social Icons" class="social-icons">
         </div>
         <p class="footer-copyright text-center my-5">&copy; Copyright Qode Interactive</p>
     </footer>
