@@ -37,9 +37,9 @@ nav {
 
   .nav-link {
     color: #ffffff !important;
-    // &:hover .nav-link {
-    //   // border-bottom: 3px solid white;
-    // }
+    &:hover {
+      border-bottom: 3px solid white;
+    }
   }
 
   .nav-link.active {
