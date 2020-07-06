@@ -8,7 +8,7 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #0e100f;
 }
 
 .container {
@@ -383,6 +383,7 @@ nav {
         &:hover {
           color: black;
           background-color: #fff;
+          border: 2px solid white;
         }
       }
     }
@@ -476,6 +477,7 @@ nav {
 }
 
 #titles {
+  // background-color: #0e100f;
   .titles-card {
     position: relative;
     width: 315px;
@@ -653,6 +655,7 @@ nav {
 }
 
 footer {
+  background-color: #000000;
   .footer-header {
     font-family: "Allura", cursive;
     text-align: center;
@@ -714,12 +717,12 @@ footer {
     }
     .guitar {
       position: absolute;
-      top: 150px;
+      bottom: 50px;
       left: 0;
     }
     .guitar-line {
       position: absolute;
-      bottom: 58px;
+      bottom: 195px;
       left: 63px;
     }
   }

@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: #000000;
+  background-color: #0e100f;
 }
 
 .container {
@@ -347,6 +347,7 @@ nav .nav-link.active {
   #my-works .my-works .btn:active, #my-works .my-works .btn:hover {
     color: black;
     background-color: #fff;
+    border: 2px solid white;
   }
   .img-fluid {
     width: 341px !important;
@@ -588,6 +589,10 @@ nav .nav-link.active {
   }
 }
 
+footer {
+  background-color: #000000;
+}
+
 footer .footer-header {
   font-family: "Allura", cursive;
   text-align: center;
@@ -643,12 +648,12 @@ footer .footer-copyright {
   }
   footer .guitar {
     position: absolute;
-    top: 150px;
+    bottom: 50px;
     left: 0;
   }
   footer .guitar-line {
     position: absolute;
-    bottom: 58px;
+    bottom: 195px;
     left: 63px;
   }
 }
